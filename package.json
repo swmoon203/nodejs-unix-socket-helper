@@ -1,0 +1,21 @@
+{
+	"name": "unix-socket",
+	"description": "unix socket helper (for linux)",
+	"version": "0.1.0",
+	"main": "unixsocket.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/swmoon203/nodejs-unix-socket-helper.git"
+	},
+	"author": {
+		"name": "Sung Wook Moon",
+		"email": "mtjddnr@gmail.com",
+		"url": "https://github.com/swmoon203"
+	},
+	"readme": "",
+	"readmeFilename": "README.md",
+	"bugs": { "url": "https://github.com/swmoon203/nodejs-unix-socket-helper/issues" },
+	"dependencies": {
+		"exec-sync": "0.1.6"
+	}
+}
