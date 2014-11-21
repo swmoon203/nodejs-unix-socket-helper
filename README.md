@@ -5,7 +5,7 @@
 
 ##Installation
 ```javascript
-npm install 
+npm install unix-socket 
 ```
 
 ##Usage
