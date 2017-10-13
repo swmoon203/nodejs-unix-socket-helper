@@ -1,6 +1,6 @@
-var fs = require('fs'), 
-	exec = require('child_process').exec, 
-	execSync = require("exec-sync");
+var fs = require('fs'),
+	exec = require('child_process').exec,
+	execSync = require("child_process").execSync;
 
 module.exports = {
 	isStreamOpen: function(path, callback) {
@@ -21,7 +21,7 @@ module.exports = {
 			this.isStreamOpen(path, function(using) {
 				if (using) return callback(false);
 				fs.exists(path, function(exists) {
-					if (exists) {	
+					if (exists) {
 						fs.unlink(path, function(err) {
 							if (err) {
 								console.error(err);
@@ -68,9 +68,9 @@ module.exports = {
 			if (option.path == null) console.error("No available stream");
 		}
 		if (!callback) callback = function(result) {};
-		
+
 		if (option.path == null) return callback(null);
-		
+
 		this.prepareStream(option.path, function(result) {
 			if (result == false) return callback(null);
 			server.listen(option.path, function() {
@@ -84,5 +84,5 @@ module.exports = {
 				}
 			});
 		});
-	}	
+	}
 };

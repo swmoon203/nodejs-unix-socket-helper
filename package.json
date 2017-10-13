@@ -16,6 +16,5 @@
 	"readmeFilename": "README.md",
 	"bugs": { "url": "https://github.com/swmoon203/nodejs-unix-socket-helper/issues" },
 	"dependencies": {
-		"exec-sync": "0.1.6"
 	}
 }
